@@ -1,38 +1,164 @@
-.App {
-  text-align: center;
+.main{
+  width: 100vw;
+  height: 100vh;
+ 
+  box-sizing: border-box;
+
+}
+.main-body-col{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(236, 248, 250);
+  width: 100vw;
+  flex-wrap: wrap;
+  /* height: auto; */
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ .main-logo{
+  /* border: 2px solid black; */
+  width: 100%;
+  height: 70px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* border: solid 2px black; */
+  margin: auto;
+  /* width: 100vw;
+  height: 100vh; */
+  margin-top: 20px;
+  
+
+
+}
+.main-head{
+  font-size: 20px;
+  color:  rgba(27, 49, 168, 1);
+  
+
+}
+
+.main-body-content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* border: solid 2px black; */
+  height: 100%;
+  width: 100%;
+  /* margin-left: 90px; */
+}
+.main-form{
+  /* border: solid 2px black; */
+  width: 50%;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+
+}
+.map{
+  
+  width: 30vw;
+  height: 69vh;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;;
+
+
+}
+
+.input-img{
+  width: 16px;
+height: 16px;
+top: 209px;
+left: 171px;
+border: 2px;
+transform: translateY(200%);
+margin-left: 2px;
+
+
+
+}
+.input-field{
+  display: flex;
+  flex-direction: column;
+  margin:10px 25px 25px;
+  /* padding-left: 1.5rem; */
+}
+
+
+.input-box{
+  width: 250px;
+height: 45px;
+top: 195px;
+left: 156px;
+border-radius: 6px;
+border: 1px #00000099 solid; 
+background-color: white;
+box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.1); 
+
+}
+
+.btn{
+  width: 10vw;
+  height: 5vh;
+  align-items: center;
+  /* padding: auto; */
+  border-radius: 30px;
+  padding: 5px 10px 14px;
+  margin:10px 25px 25px;
+  background-color:  rgba(27, 49, 168, 1);
   color: white;
+  
+}
+.main-body-dist{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: solid 2px black; */
+  margin: auto;
+  /* width: 100vw;
+  height: 100vh; */
+  margin-top: 10px;
+  background-color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.main-distance{
+  
+  width:30vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.calc{
+  flex-direction: row;
+  width: 100%;
+}
+.calculated-distance{
+  margin-left: 160px;
+}
+
+
+
+
+
+
+@media (max-width: 800px) {
+  .main-body-col, .main-body-content , .main-form,.map {
+    flex-direction: column;
+    /* position: static; */
+    /* width: 100vw; */
+    width: 100%;
+     background-color: rgb(236, 248, 250);
+    
   }
-  to {
-    transform: rotate(360deg);
+  .main{
+    height: auto;
+  }
+  .btn{
+    width:20vw;
+  }
+  .main-distance{
+    background-color: white;
+    width: 100%;
   }
 }
